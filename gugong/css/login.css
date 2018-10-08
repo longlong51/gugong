@@ -1,0 +1,282 @@
+@charset "utf-8";
+.header {
+	height: 40px;
+	border-bottom: 1px solid #e3e3e3;
+	position: relative;
+}
+
+.body {
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 微软雅黑, 黑体;
+	max-width: 1920px;
+	margin: 0 auto;
+	color: #707070;
+	position: relative;
+}
+
+.position {
+	height: 70px;
+	line-height: 50px;
+}
+
+.position .wrap {
+	width: 1258px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.position a {
+	margin-left: 0;
+	margin: 0 10px;
+	color: inherit;
+}
+
+.body a {
+	text-decoration: none;
+}
+
+.wrap {
+	width: 1258px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.login .title2 {
+	color: #fff;
+	padding-top: 192px;
+}
+
+.title2 {
+	text-align: center;
+	font-size: 26px;
+	color: #474747;
+	line-height: 1.2;
+	font-family: "微软雅黑";
+}
+
+.login h1 {
+	text-align: center;
+	font-size: 26px;
+	color: #474747;
+	line-height: 1.2;
+}
+
+.tit-span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+	line-height: 1;
+}
+
+.title2 span.tit-span img {
+	height: 32px;
+	width: 22px;
+}
+
+.title2 span img {
+	/* width: 261px; */
+	height: 65px;
+	width: auto;
+}
+
+.tit-span img {}
+
+.tit-span img {
+	height: 32px;
+	width: 22px;
+	max-width: 100px;
+}
+
+.login img {
+	border: 0;
+	outline: 0;
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.login {
+	background: url(../img/login/bg17.jpg) center top no-repeat;
+	height: 645px;
+	margin: 20px 0 45px;
+}
+
+.login .box {
+	margin: 30px auto 0;
+	width: 685px;
+}
+
+.login .box .input {
+	background: url(../img/login/input1.png) left center no-repeat;
+	width: 685px;
+	height: 40px;
+	margin-left: 150px; 
+	margin-top: 12px;
+	position: relative;
+}
+
+.shuru {
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+.login .box .input.yz {
+	background: url(../img/login/input2.png) left center no-repeat;
+	position: relative;
+}
+
+.login .box .input .yz .text_img {
+	position: relative;
+	width: 90px;
+	height: 40px;
+}
+
+.text_style {
+	font-size: 12px;
+	color: white;
+	height: 38px;
+	line-height: 40px;
+	width: 370px;
+	border: none;
+	outline: medium;
+	background: transparent;
+	text-indent: 1.2em;
+}
+
+.tt_style {
+	float: left;
+	font-size: 12px;
+	color: white;
+	height: 38px;
+	line-height: 40px;
+	width: 270px;
+	border: none;
+	outline: medium;
+	background: transparent;
+	text-indent: 1.2em;
+}
+
+.login img {
+	border: 0;
+	outline: 0;
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+	/* background: blue;*/
+}
+
+.login .box .log {
+	background: url(../img/login/input2.png) left center no-repeat;
+	width: 158px;
+	height: 40px;
+	margin-top: 12px;
+	position: relative;
+}
+
+.login .box .btn {
+	display: block;
+	/*background:url(../img/input2 - 副本_meitu_1.png) center center no-repeat;*/
+	position: relative;
+	width: 158px;
+	height: 40px;
+	text-align: center;
+	margin: 54px 0 0 66px;
+	float: left;
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.login .box .no {
+	color: #FFFFFF;
+	margin: 0 0 0 21px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+
+/*信息提示框*/
+
+/*提示框基本样式*/
+
+.infoStyle {
+	background: #ee0101;
+	color: #fff;
+	min-width: 120px;
+	font-size: 11px;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 6px #000;
+	padding: 4px 10px 4px 10px;
+	border-radius: 6px;
+}
+
+.infoStyle span::before {
+	content: "";
+	position: absolute;
+	top: 26px;
+	left: 6px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+	border-top: 12px solid #000;
+	border-top-color: #ACACAC;
+	/*top就是倒三角，bottom就是上三角，left,right类似*/
+}
+
+.infoStyle span::after {
+	content: "";
+	position: absolute;
+	top: 26px;
+	left: 10px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-top-color: #ee0101;
+	/*top就是倒三角，bottom就是上三角，left,right类似*/
+}
+
+
+/*提示框位置*/
+
+.test_info {
+	position: absolute;
+	left: 250px;
+	top: -35px;
+	display: none;
+}
+/*登录*/
+.deng{
+	height: 100px;
+	margin: 0 150px; 
+	margin-top: 50px;
+	width: 585px;
+	position: relative;
+}
+.linesbtn {
+	background: url(../img/login/input3.png) no-repeat;
+	width: 100px;
+	height: 40px;
+	-webkit-appearance: none;	/*清除默认样式*/
+	outline: medium;	/*取消选中时的样式*/
+	border: none;
+	color: #FFFFFF;
+	font-size: 17px;
+	line-height: 35px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+}

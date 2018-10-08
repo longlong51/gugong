@@ -1,0 +1,711 @@
+@charset "utf-8";
+*{font-family: "微软雅黑";}
+body{
+	margin: 0 auto;
+	padding: 0;
+}
+.fr{ float: right;}
+.fl{ float: left;}
+.re{ position: relative;}
+.ab{ position: absolute;}
+
+/*展示大图*/
+.add {
+transform: scale(1.2);
+transition: all 3s ease-in-out;
+}
+#box{	
+	width: 100%;
+	height: 800px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+		/*vertical-align: middle;*/
+}
+.pic{
+	/*vertical-align: middle;*/
+	margin: 0 auto;
+	width: 100%;
+    height: 100%; 
+	float: left;
+	display: none;
+}
+.ctrdot{
+	display: block;
+	position: absolute;
+	top:740px;
+	left:710px;
+}
+.ctrdot i{
+	display: inline-block;
+    width: 27px;
+    height: 24px;
+    margin: 0 5px;
+    line-height: 3px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;  
+	
+}
+.after{
+	width: 27px;
+    height: 24px;
+	background: url(../img/shouye/dian2.png) no-repeat center left;
+}
+.now{
+	width: 27px;
+    height: 24px;
+	background: url(../img/shouye/dian2.png) no-repeat center right;
+}
+/*文字及图片介绍展示*/
+.show{
+	height: 1200px;
+	width: 100%;
+	margin-top:20px;
+}
+/*第一块*/
+.block1{
+	width: 1332px;
+	height: 794px;
+	margin: 0 auto;
+	position: relative;
+}
+/*第一块左边*/
+.block1_left{
+	width: 786px;
+	height: 794px;
+}
+.block1_left1{
+	background:url(../img/shouye/s5b4ff86def473.png) no-repeat;
+	background-size: contain;  /*图片填充适应div*/
+	width: 786px;
+	height: 402px;
+}
+.block1_left1_img{
+	width: 420px;
+	height: 426px;
+	background:url(../img/shouye/s5b4ff7e41273e.png) no-repeat;
+	background-size: contain;
+	position: relative;
+	top: 40px;
+}
+.block1_left2{
+	margin-top: 23px;
+	width: 786px;
+	height: 369px;
+	background: gray;
+}
+.block1_left2_news{
+	background: url(../img/shouye/home_block1_news_bg.jpg);
+	width: 393px;
+	height: 369px;
+}
+.news_title{
+	margin: 0 auto;
+	width: 350px;
+	height: 51px;
+	position: relative;
+	top:45px;
+}
+/*更多*/
+.more{
+	text-decoration: none;
+	color: white;
+	width: 18px;
+	height: 29px;
+	text-align: center;
+	line-height: 1;
+	padding: 10px 17px;
+	display: block;
+}
+.more>i{
+	display: block;
+	float: right;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: 300px;
+	top:3px;
+	background:url(../img/shouye/more.png) no-repeat;
+}
+
+.tit_span>img{
+	width: 24px;
+	height: 36px;
+	vertical-align: middle;
+	position: relative;
+	top:-2px;
+}
+.title>span{
+	font-size: 24px;
+	color: white;
+	line-height: 50px;
+	margin:0 3px;
+	vertical-align: middle;
+}
+.title>span>img{ 
+	position: relative;
+	top:-4px;
+}
+
+.block1_left2_img{
+	overflow: hidden;
+	width: 393px;
+	height: 369px;
+	margin: 0;	
+}
+.block1_left2_img>img{
+	overflow: hidden;
+	width: 393px;
+	height: 369px;
+	margin: 0;	
+	transform:scale(1);-webkit-transform:scale(1);
+    transition:all 1s cubic-bezier(0,1,1,1) 0s;
+    -webkit-transition:all 1s cubic-bezier(0,1,1,1) 0s;
+}
+.block1_left2_img:hover img{
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+}
+.news1{
+	height: 92px;
+	width: 340px;
+	margin: 30px auto;
+	position: relative;
+	top:30px;
+}
+.news1_sty{
+	width: 330px;
+	height: 31px;
+	text-overflow: ellipsis;/*溢出文字变为点*/
+	overflow: hidden;
+	white-space:nowrap;/*标签强制内容不换行*/
+	color: white;
+	margin-top: 10px;	
+}
+.a{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;	
+}
+.a>img{
+	width: 17px;
+	height: 14px;
+	vertical-align: middle;
+	margin-left:0;
+	margin-right: 8px;
+}
+.news2{
+	background: url(../img/shouye/index-icon3.png) repeat-x;  /*在x轴上重复*/
+	height: 160px;
+	width: 350px;
+	margin:auto;
+	color: white;	
+}
+.news2 ul {
+	padding-left: 20px;
+	position:relative;
+	left: -17px;
+	top:23px;
+}
+.news2 ul li{
+	overflow:hidden; 
+	height: 35px;
+	width: 350px;
+}
+.news2>ul>li>p{
+	float:right; 
+	font-size: 17px;
+	color:#fff;
+	display: block;
+	line-height: 24px;
+	position: relative;
+	top:-16px;
+	display:block;
+}
+.news2>ul>>li>p>span{
+	font-size: 22px;
+}
+.news2 ul a{ 
+	text-decoration: none;
+	font-size: 14px;
+	color:#fff; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	display: block;
+	position:relative;
+	padding-left:24px;
+}
+.news2 ul a:hover{ 
+	color:#a0b4c2;
+}
+.news2 ul a{
+	font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+.news2 ul a:before {
+	content: '';
+	position: absolute;
+	left: 1px;
+	top: 12px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+/*第一块右边*/
+.block1_right{
+	width: 525px;
+	height:794px ;
+}
+/*第一块右边上第一部分*/
+.box3 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+	overflow: hidden;
+}
+.l1{
+	position: relative;
+	width: 175px;
+	height: 247px;
+	overflow: hidden;
+	background:url(../img/shouye/home_block1_box3_bg1.jpg);
+}
+.l2{
+	position: relative;
+	width: 175px;
+	height: 247px;
+	overflow: hidden;
+	background: url(../img/shouye/home_block1_box3_bg2.jpg);	
+}
+.l3{
+	display: block;
+	position: relative;
+	width: 175px;
+	height: 247px;
+	overflow: hidden;
+	background: url(../img/shouye/home_block1_box3_bg3.jpg);	
+}
+/*背景转动图片*/
+.bg{
+	display: block;
+    width: 240px;
+    height: 252px;
+    margin-left: 80px;
+    position: absolute;
+}
+.box3 li .bg img{
+	display: block;
+	-webkit-animation:swinging 30s linear 0s infinite;
+    animation:swinging 30s linear 0s infinite;
+}
+@keyframes swinging{
+	 0% { transform: rotate(0); }
+
+
+    100% { transform: rotate(360deg); }
+}
+@-moz-keyframes swinging {
+	 0% { transform: rotate(0); }
+
+
+    100% { transform: rotate(360deg); }
+}/* Firefox */
+@-o-keyframes swinging {
+	 0% { transform: rotate(0); }
+
+
+    100% { transform: rotate(360deg); }
+} /* Opera */
+@-webkit-keyframes swinging{
+	 0% { transform: rotate(0); }
+
+
+    100% { transform: rotate(360deg); }
+}/* Safari 和 Chrome */
+.swinging {
+	-webkit-animation-name: swinging;
+	-moz-animation-name: swinging;
+	-o-animation-name: swinging;
+	animation-name: swinging;
+}
+.box3 li .bg img:hover{animation-play-state:paused;}
+.ico{
+	display: block;
+	width: 133px;
+	height: 100px;
+}
+.ico>img{
+	display: block;
+	width: 76px;
+	height: 74px;
+	margin-top:24px;
+	margin-left: 19px;
+	position: absolute;
+}
+.cont{
+	display: block;
+	width: 150px;
+	height: 120px;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	color: white;
+}
+/*第一块右边下第二部分*/
+.box4{
+	width: 525px;
+	height: 520px;
+	background: url(../img/shouye/home_block1_box4_bg.jpg);
+	margin-top: 27px;
+}
+.box4_ticket{
+	width: 525px;
+	height: 290px;
+	border-bottom: 1px solid #102234
+}
+.ticket_title{
+	margin: 0 auto;
+	width: 480px;
+	height: 51px;
+	position: relative;
+	top:25px;
+}
+.more1{
+	text-decoration: none;
+	color: white;
+	width: 18px;
+	height: 29px;
+	text-align: center;
+	line-height: 1;
+	padding: 10px 17px;
+	display: block;
+}
+.more1>i{
+	display: block;
+	float: right;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: 430px;
+	top:3px;
+	background:url(../img/shouye/more.png) no-repeat;
+}
+.ticket_time{
+	margin-top: 5px;
+	width: 525px;
+	height: 100px;
+}
+.ticket_time ul{
+	padding: 0 0 0 20px;
+}
+.ticket_time ul li{
+	list-style: none;
+	float: left;
+	width: 110px;
+	margin-left: 10px;
+	height: 100px;
+	color: white;
+}
+.h1{
+	background: url(../img/shouye/huiwen1.png) no-repeat right;
+}
+.ticket_time ul li p{
+	margin-top: -15px;
+	font-size: 15px;
+}
+
+.tip{
+	width: 525px;
+	height: 48px;
+	margin-top: 55px;
+	padding: 0 0 0 30px;
+}
+.tip p{
+	line-height: 24px;
+	margin: 0;
+	color: #a0b4c2;
+	font-size: 12px;
+}
+.tip p i{
+	background: url(../img/shouye/wxx_shuxina.png) right center no-repeat;
+	margin-right: 15px;
+    padding-right: 20px;
+    display: inline-block;
+	font-style: normal;
+}
+.tip p span:first-child{
+	 margin-right:15px;
+}
+.box4_message{
+	border-top:1px solid #334a61;
+}
+.message_title{
+	margin: 0 auto;
+	width: 480px;
+	height: 51px;
+	position: relative;
+	top:10px;
+}
+.message_box{
+	padding: 0 0 0 16px;
+	height: 146px;
+	width: 525px;
+	margin-top: 31px;
+}
+.message{
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+.message li{ 
+	overflow:hidden; 
+	padding:6px 0;
+	height:15px;
+	/*line-height:24px;*/
+}
+.message p{
+	 float:right; 
+	 font-size:16px; 
+	 color:#fff;
+	 display: block;
+	 line-height: 24px;
+	 position: relative;
+	 top:-16px;
+	 left:-40px;
+}
+.message a{ 
+	text-decoration: none;
+	font-size: 14px;
+	color:#fff; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	display: block;
+	position:relative;
+	padding-left:24px;
+}
+.message a:hover{ 
+	color:#a0b4c2;
+}
+.message a:before {
+	content: '';
+	position: absolute;
+	left: 1px;
+	top: 12px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+/*第二块*/
+.block2{
+	width: 1332px;
+	height: 392px;
+	margin: 20px auto 0 auto;
+}
+.block2_left{
+	width: 326px;
+	height: 392px;
+	background: url(../img/shouye/home_block2_box_bg1440.jpg) no-repeat;
+}
+.size{
+	width: 210px;
+	height: 50px;
+	margin-top: 35px;
+	margin-left: 66px;
+}
+.numm{
+	margin-top: 140px;
+	margin-left: 30px;
+	font-size: 48px;
+	color: white;
+}
+.numm p{
+	margin-top:-50px;
+	margin-left:240px;
+	background: url(../img/shouye/jian1440.png) no-repeat;
+}
+.numm p img{
+	position: relative;
+	top:-15px;
+	left: 12px;
+	width: 22px;
+	height: 22px;
+}
+.check{
+	margin-top: -60px;
+	width: 326px;
+	height: 47px;
+	font-size: 20px;
+	color:white;
+	text-align: center;
+	line-height: 47px;
+	background: url(../img/shouye/txtbg.png) no-repeat center;
+}
+.check span{
+	background: url(../img/shouye/txtbg1.png) no-repeat right ;
+}
+.total{
+	margin-top: 60px;
+	width: 326px;
+	height: 40px;
+}
+.link{
+	margin: 0 auto;
+	text-decoration: none;
+	font-size: 16px;
+ 	 display:block; 
+ 	 width:140px; 
+ 	 height:40px; 
+ 	 line-height:40px; 
+ 	 color:#d8a8a8; 
+ 	 text-align:center; 
+ 	 position:relative;
+}
+ .link:hover{ color:#ffd6d6;}
+.block2_right{
+	width: 988px;
+	height: 392px;
+}
+.block2_right ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.block2_rightbg{
+	width: 329px;
+	height:392px ;
+	float: left;
+}
+.block2_rightbg img{
+	width: 100%;
+}
+
+/*第三块*/
+.block3{
+	width: 1332px;
+	height: 405px;
+	margin: 20px auto;
+}
+.block3_left{
+	height: 405px;
+	width: 966px;
+	background: url(../img/shouye/home_block3_box_bg.jpg) center no-repeat;
+}
+.block3_right{
+	overflow: hidden;
+	height: 405px;
+	width: 366px;
+}
+.block3_right img{
+	width: 100%;
+	transform:scale(1);-webkit-transform:scale(1);
+    transition:all 1s cubic-bezier(0,1,1,1) 0s;
+    -webkit-transition:all 1s cubic-bezier(0,1,1,1) 0s;
+}
+.block3_right:hover img{
+	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+}
+.poss{
+	margin-top: 45px;
+	margin-left: 30px;
+}
+.block3 .block3_left ul{ 
+	margin-top: 95px;
+	overflow:hidden; 
+	list-style: none;
+	/*background: green;*/
+}
+ .block3 .block3_left li{ 
+ 	float:left; 
+ 	width:50%;
+ 	margin-bottom:30px;
+}
+ .block3 .block3_left h3{ 
+ 	margin-bottom:14px; 
+ 	padding-right:60px; 
+ 	padding-left:22px; 
+ 	background:url(../img/shouye/liststyle.png) left no-repeat; 
+ 	overflow:hidden; 
+ 	white-space:nowrap; 
+ 	text-overflow:ellipsis; 
+ 	color:#fff;
+ 	font-size:18px; 
+ 	margin-bottom:6px;
+}
+ .block3 .block3_left h3 a{ 
+ 	color:#ffd6d6;
+ 	text-decoration:none;
+}
+ .block3 .block3_left h3:hover{ 
+ 	color:#d8a8a8;
+}
+ .block3 .block3_left p{ 
+ 	font-size: 14px;
+ 	color:#ffd6d6;
+ 	line-height:22px; 
+ 	margin-bottom:18px; 
+ 	padding-right:60px; 
+ 	overflow:hidden;
+ 	text-overflow:ellipsis; 
+ 	white-space:nowrap;
+}
+ .block3 .block3_left .link{
+ 	font-size: 14px;
+ 	text-decoration: none;
+ 	 display:block; 
+ 	 width:60px; 
+ 	 height:24px; 
+ 	 line-height:24px; 
+ 	 color:#d8a8a8; 
+ 	 text-align:center; 
+ 	 position:relative;
+}
+ .block3 .block3_left .link:hover{ color:#ffd6d6;}
+ /*第四块*/
+.block4{
+	position: relative;
+	width: 1332px;
+	height: 237px;
+	margin: 0 auto 25px auto;
+}
+.block4 ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.block4_img{
+	width: 266.4px;
+	height: 237px;
+	float: left;	
+}
+.block4_img>img{
+	width: 100%;
+}
+.block4_imgpic{
+	width: 266.4px;
+	height: 140px;
+	position:absolute;
+	top:50px;
+	vertical-align: middle;
+	text-align: center;
+}
+.block4_imgpic img{
+	width: 110px;
+}
+.block4_imgpic p{
+	margin: 0;
+	color: white;
+	font-size: 18px;
+}
+.nav{
+	position: relative;
+}

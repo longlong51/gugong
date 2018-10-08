@@ -1,0 +1,181 @@
+@charset "utf-8";
+*{font-family: "微软雅黑";}
+body{
+	margin: 0 auto;
+	padding: 0;
+}
+.nav{
+	width: 100%;
+	height: 48px;
+	background: rgba(25,25,25,0.6);
+	display: inline-block;
+	z-index: 99;
+}
+.nav .logo {
+    width: 155px;
+    height: 48px;
+    position: relative;
+    float: left;
+}
+.nav .logo img{
+	position: absolute;
+    width: 115px;
+    height: auto;
+    top: 15%;
+    left: 25%;
+}
+/*一级菜单*/
+.nav .uli{
+	position: absolute;
+	float: left;
+	left: 20%;
+	width: 900px;
+	height: 48px;
+}
+.nav .uli .uls{
+	list-style: none;
+	line-height: 48px;
+	margin: 0;
+}
+.nav .uli .uls li{
+	width: 30px;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin-right: 8%;
+}
+.nav .uli .uls li a{
+	font-size: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.nav .uli .uls li a:hover{
+	color: #C2A680;
+}
+.nav .uli .uls li b{
+	display: none;
+}
+.nav .uli .uls li b img{
+	width:18px;
+	position: relative;
+	top:-31px;
+}
+
+/*工具条*/
+.tools {
+	float: right;
+	margin-right: 40px; 
+}
+.tools ul {
+	margin: 0;
+	padding: 8px 0; 
+	list-style: none;
+}
+/*右上角li位置*/
+.tools li {
+    float: left;
+    /*padding-left: 15px;*/
+    width: 60px;
+    /*margin-right: 5px;*/
+    border-left: 1px solid #fff;
+    height: 32px;
+    position: relative; 
+}
+.tools li:first-child {
+    border: 0;
+    margin: 0;
+    position: relative;
+}
+.tools .aa1{
+	padding-right: 18px;
+    width: 35px;
+    height: 20px;
+	position: relative;
+	display: block;
+	color:#707070;
+	font-size: 14px;
+	line-height: 20px;
+	overflow: hidden;
+}
+.tools li a img{
+    height: 20px;
+}
+/*登录注册*/
+.loginbox{
+    background:url(../img/login/login-box1.png) no-repeat 0 bottom;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    padding-top: 17px;
+    padding-left: 25px;
+    left: -25px;
+    display: none;
+}
+.loginbox .a {
+    cursor: pointer;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color:#707070;
+    padding: 0;
+}
+.loginbox .a a{
+	text-decoration: none;
+	color:#707070;
+}
+.lang img{
+	height: 32px;
+	width: 30px;
+    cursor:pointer;
+    margin-left: 20px;
+}
+
+/*二级菜单*/
+.item{
+	width: 100%;
+	height: 48px;
+	background-color: rgba(159,136,111,0.8);
+	margin-top: -4px;
+	position: absolute;
+	display: none;
+	overflow: hidden;
+}
+.son_menu{
+	width: 800px;
+	height: 48px;
+	line-height: 48px;
+	background:url(../img/shouye/black61.png) ;
+	color: #FFFFFF;
+	font-size: 14px;
+	position: absolute;
+	display: block;
+}
+.imges{
+	vertical-align: middle;
+	margin:0 20px;
+}
+.dist1{margin-left: 220px;}
+.dist2{margin-left: 400px;}
+.dist3{margin-left: 410px;}
+.dist4{margin-left: 400px;}
+.dist5{margin-left: 600px;}
+.dist6{margin-left: 720px;}
+.dist7{margin-left:850px;}
+.tools .login a span{
+	position: absolute;
+    right: 0px;
+    top: 6px;
+    border-top: 5px solid #fff;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    width: 0;
+    height: 0;
+    content: '';
+}
+.tools .login .aa1{
+	margin-top: 5px;
+}
+.introduction{
+	display: none;
+}

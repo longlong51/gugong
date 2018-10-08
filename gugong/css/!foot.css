@@ -1,0 +1,93 @@
+@charset "utf-8";
+.footer{
+	width: 100%;
+	height: 200px;
+	color: #FFFFFF;
+	background: #000000;
+	opacity: 0.7;
+	font-size: 90%;
+	text-align: center;
+	position:relative;
+}
+body{
+	margin:0  auto;
+	padding: 0;
+}
+		
+.num{
+	height: 50px;
+	padding-top: 20px;
+	text-align: center;
+	color: #FFFFFF;
+}
+		
+.nav_foot{
+	height: 30px;
+}
+
+.footer a{text-decoration: none; color: #FFFFFF;}
+
+
+.inner{display:inline-block;vertical-align: middle;margin-left:10px;}
+.inner i{
+	display:inline-block;
+	width:20px;height:28px;
+	line-height:28px;
+	text-align:center;
+	background:#404040;
+	margin:0 3px;}
+.code2d{
+	position:absolute;
+	left:50%;
+	top:35px;
+	margin-left:360px;
+	z-index: 110;}
+.code2d a{
+	display:block;
+	background:url(../img/foot/ico_hand.png) center no-repeat;
+	width:38px;
+	height:38px;
+	cursor: pointer;}
+.code2d a:after{
+	content: "";
+	position: absolute;
+	left:55%;
+	top:55%;
+	background:url(../img/foot/ico_hand2.png) center no-repeat;
+	width:26px;
+	height:26px;
+	cursor: pointer;
+	animation:chand 3s linear 0s infinite;
+	-webkit-animation:chand 3s linear 0s infinite;}
+
+.code2d img{
+	position:absolute;
+	left:50%;
+	bottom:100%;
+	width:282px;
+	margin-left:-141px;
+	display:none;
+	max-width:none;
+	max-height:none;
+	margin-bottom:20px;}
+
+.code2d:hover img{display:block;}
+
+.copyright{
+	height: 30px;
+}
+
+.btns{
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #FFFFFF;
+	margin: 0 auto;
+}
+
+
+
+		
+	
+	

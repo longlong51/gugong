@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+.int{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: url(../img/introduction/nav_bg.jpg) center top repeat;
+}
+
+
+.int .close{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 1;
+	overflow: hidden;
+	transition: all .2s;
+	background: url(../img/introduction/navbar_close.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	
+}
+.int .close:hover{
+	transform: rotate(180deg);
+	transition: all 0.5s ease-in-out;
+}
+.int .list{
+	overflow: hidden;
+	display: inline-block;
+	margin-top: 100px;
+	margin-left: 230px;
+}
+.int .item1{
+	float: left;
+	min-width: 160px;
+	color:white;
+	text-align: center;
+	min-height: 261px;
+}
+.int .item1 hl{
+	font-family:黑体;
+	font-size: 26px;
+	padding-bottom: 26px;
+	background: url(../img/introduction/nav_liststyle.png) center bottom no-repeat;
+}
+.int .item1 dl {
+	background: url(../img/introduction/nav_dot.png) center top no-repeat;
+	padding-top: 18px;
+	margin-top : 50px;
+
+}
+.int .item1 dd{
+	font-size: 16px;
+	padding: 4px 0;
+	width: 160px;
+	margin-left: 0px;
+	color:lightpink;
+	opacity: 0.7;
+}
+
+.int .item1 dd:hover{
+	color: white;
+}
